@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.num {
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.disponible {
+  background: #eee;
+}
+
+.reservado {
+  background: orange;
+  color: white;
+}
+
+.pagado {
+  background: green;
+  color: white;
+}

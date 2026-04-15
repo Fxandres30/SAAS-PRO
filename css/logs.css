@@ -1,0 +1,16 @@
+.logs {
+  background: #020617;
+  padding: 15px;
+  height: 220px;
+  overflow-y: auto;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.logs::-webkit-scrollbar {
+  width: 6px;
+}
+
+.logs::-webkit-scrollbar-thumb {
+  background: #6366f1;
+}

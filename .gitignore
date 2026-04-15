@@ -1,0 +1,8 @@
+# Dependencias
+node_modules
+api/node_modules
+bot/node_modules
+
+# WhatsApp (MUY IMPORTANTE)
+api/.wwebjs_auth
+api/.wwebjs_cache

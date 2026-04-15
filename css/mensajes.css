@@ -1,0 +1,31 @@
+.msg-box {
+  background: rgba(2, 6, 23, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.msg-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msg-item {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-delete {
+  background: #ef4444;
+}
+
+.btn-add {
+  background: #1e293b;
+}
+
+.btn-save {
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+}

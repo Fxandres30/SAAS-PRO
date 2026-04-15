@@ -1,0 +1,52 @@
+.sidebar {
+  width: 230px;
+  background: #020617;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: #aaa;
+  align-items: center;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* ICONOS */
+.sidebar i {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+
+
+/* TEXTO */
+.sidebar button span {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar button:hover {
+  background: #1e293b;
+  color: white;
+  transform: translateX(5px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bot SaaS</title>
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-wrapper">
+  <div class="auth-card">
+
+    <h2 id="titulo">Iniciar sesión</h2>
+
+    <!-- LOGIN -->
+    <div id="loginBox">
+      <input id="email_login" placeholder="Email">
+      <input id="password_login" type="password" placeholder="Password">
+
+      <button onclick="login()">Entrar</button>
+
+      <div class="divider">o continuar con</div>
+
+      <button class="google-btn">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="18">
+        Continuar con Google
+      </button>
+
+      <p class="switch">
+        ¿No tienes cuenta? 
+        <span onclick="mostrarRegistro()">Regístrate</span>
+      </p>
+    </div>
+
+    <!-- REGISTRO -->
+    <div id="registerBox" class="hidden">
+      <input id="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+
+      <button onclick="register()">Crear cuenta</button>
+
+      <div class="divider">o continuar con</div>
+
+      <button class="google-btn">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="18">
+        Continuar con Google
+      </button>
+
+      <p class="switch">
+        ¿Ya tienes cuenta? 
+        <span onclick="mostrarLogin()">Inicia sesión</span>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script src="./js/auth.js"></script>
+
+</body>
+</html>

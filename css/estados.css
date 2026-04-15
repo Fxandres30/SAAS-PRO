@@ -1,0 +1,25 @@
+.activo {
+  color: #22c55e;
+}
+
+.bloqueado {
+  color: #ef4444;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-activo {
+  background: rgba(34,197,94,0.15);
+  color: #22c55e;
+}
+
+.badge-bloqueado {
+  background: rgba(239,68,68,0.15);
+  color: #ef4444;
+}
+

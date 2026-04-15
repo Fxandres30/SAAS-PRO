@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+}
+
+i {
+  width: 18px;
+  height: 18px;
+}
+
+h2, h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panel</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/topbar.css">
+  <link rel="stylesheet" href="./css/cards.css">
+  <link rel="stylesheet" href="./css/grupos.css">
+  <link rel="stylesheet" href="./css/buttons.css">
+  <link rel="stylesheet" href="./css/inputs.css">
+  <link rel="stylesheet" href="./css/mensajes.css">
+<link rel="stylesheet" href="./css/logs.css">
+<link rel="stylesheet" href="./css/estados.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2 class="logo">
+      <i data-lucide="bot"></i>
+      <span>Bot SaaS</span>
+    </h2>
+
+    <button onclick="mostrar('dashboard')">
+      <i data-lucide="layout-dashboard"></i> Dashboard
+    </button>
+
+    <button onclick="mostrar('grupos_seccion')">
+      <i data-lucide="users"></i> Grupos
+    </button>
+
+    <button onclick="mostrar('mensajes')">
+      <i data-lucide="settings"></i> Mensajes
+    </button>
+
+    <button onclick="mostrar('logs')">
+      <i data-lucide="file-text"></i> Logs
+    </button>
+
+    <hr>
+
+    <button onclick="logout()">
+      <i data-lucide="log-out"></i> Salir
+    </button>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="topbar">
+      <h2><i data-lucide="panel-top"></i> Panel</h2>
+      <span id="estado_top"></span>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="seccion">
+  <div class="grid">
+
+    <!-- CARD ESTADO -->
+    <div class="card">
+      <h3><i data-lucide="activity"></i> Estado</h3>
+
+      <p id="estado_card">Cargando...</p>
+
+      <div class="acciones">
+
+        <button id="btn_start" onclick="iniciarBot(event)" class="btn btn-success">
+          <i data-lucide="play"></i>
+          Iniciar
+        </button>
+
+        <button id="btn_stop" onclick="detenerBot(event)" class="btn btn-dark">
+          <i data-lucide="square"></i>
+          Detener
+        </button>
+
+        <button id="btn_restart" onclick="restartBot(event)" class="btn btn-primary">
+          <i data-lucide="refresh-cw"></i>
+          Reiniciar
+        </button>
+
+        <button id="btn_reset" onclick="resetBot(event)" class="btn btn-danger">
+          <i data-lucide="trash-2"></i>
+          Eliminar
+        </button>
+
+      </div>
+    </div>
+
+    <!-- CARD QR -->
+    <div class="card">
+      <h3><i data-lucide="qr-code"></i> QR</h3>
+      <img id="qr" width="200" style="display:none;" />
+    </div>
+
+  </div>
+</div>
+
+    <!-- GRUPOS -->
+     <div id="grupos_seccion" class="seccion">
+  <h2><i data-lucide="users"></i> Grupos</h2>
+
+  <div id="grupos_container" class="grupos-grid"></div>
+</div>
+
+
+    <!-- MENSAJES -->
+    <div id="mensajes" class="seccion">
+      <h2><i data-lucide="settings"></i> Mensajes</h2>
+
+      <div class="msg-box">
+        <h3>Reservados</h3>
+        <div id="reservado_list"></div>
+        <button onclick="agregarInput('reservado')">➕</button>
+      </div>
+
+      <div class="msg-box">
+        <h3>Ocupados</h3>
+        <div id="ocupado_list"></div>
+        <button onclick="agregarInput('ocupado')">➕</button>
+      </div>
+
+      <div class="msg-box">
+        <h3>Inválidos</h3>
+        <div id="invalido_list"></div>
+        <button onclick="agregarInput('invalido')">➕</button>
+      </div>
+
+      <button onclick="guardarMensajes()">💾 Guardar</button>
+    </div>
+
+    <!-- LOGS -->
+    <div id="logs" class="seccion"></div>
+
+  </div>
+</div>
+
+<!-- 🔥 SCRIPTS -->
+
+<script src="./js/grupos.js"></script>
+<script src="./js/mensajes.js"></script>
+<script src="./js/panel.js"></script>
+
+<!-- 🔥 ACTIVAR ICONOS -->
+<script>
+  lucide.createIcons()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* ================= GRID ================= */
+
+.grupos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* ================= CARD ================= */
+
+.grupo-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+.grupo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+/* ================= HEADER ================= */
+
+.grupo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.grupo-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔥 NOMBRE */
+.grupo-nombre {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #e2e8f0;
+}
+
+/* 🔥 ID */
+.grupo-id {
+  font-size: 11px;
+  opacity: 0.5;
+  margin-top: 4px;
+  color: #94a3b8;
+}
+
+/* ================= ESTADO (TOP RIGHT) ================= */
+
+.grupo-estado {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* 🟢 ACTIVO */
+.grupo-estado.activo {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  box-shadow: 0 0 12px rgba(34,197,94,0.5);
+}
+
+/* 🟠 INACTIVO */
+.grupo-estado.inactivo {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  color: black;
+  box-shadow: 0 0 12px rgba(250,204,21,0.5);
+}
+
+/* ✨ HOVER */
+.grupo-estado:hover {
+  transform: scale(1.08);
+  opacity: 0.95;
+}
+
+/* ================= BOTONES ================= */
+
+.grupo-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* BOTÓN BASE */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* 🟣 COPY */
+.btn-copy {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+}
+
+/* ⚫ OPEN */
+.btn-open {
+  background: #1f2937;
+  color: white;
+}
+
+/* 🔵 TOGGLE (si lo usas aparte) */
+.btn-toggle {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+}
+
+/* ✨ HOVER BOTONES */
+.btn:hover {
+  transform: scale(1.07);
+  opacity: 0.9;
+}
+
+/* ================= DETALLE PRO ================= */
+
+/* Línea suave entre cards (opcional) */
+.grupo-card::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  height: 1px;
+  background: rgba(255,255,255,0.04);
+}
+
+.grupo-extra {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
