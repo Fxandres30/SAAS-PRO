@@ -1,4 +1,4 @@
-const API = "http://localhost:3000"
+const API = "http://209.38.77.179:3000" 
 
 const cliente_id = localStorage.getItem("cliente_id")
 
