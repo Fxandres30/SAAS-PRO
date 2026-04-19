@@ -1,4 +1,4 @@
-import { supabase } from "../api/supabase.js"
+import { supabase } from "../backend/supabase.js"
 
 // ================= LIMPIAR TEL =================
 

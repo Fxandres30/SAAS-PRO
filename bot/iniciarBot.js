@@ -1,5 +1,5 @@
 import pkg from "whatsapp-web.js"
-import { supabase } from "../api/supabase.js"
+import { supabase } from "../backend/supabase.js"
 import { escanearUsuario } from "./escanerUsuarios.js"
 import QRCode from "qrcode"
 

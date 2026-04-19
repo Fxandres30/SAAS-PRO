@@ -4,7 +4,7 @@ const cliente_id = localStorage.getItem("cliente_id")
 
 if (!cliente_id) {
   alert("No hay sesión ❌")
-  window.location.href = "login.html"
+  window.location.href = "/login"
 }
 
 // ================= UI =================
@@ -15,7 +15,7 @@ function renderIcons() {
 
 function logout() {
   localStorage.removeItem("cliente_id")
-  window.location.href = "login.html"
+  window.location.href = "/login"
 }
 
 function mostrar(id) {
